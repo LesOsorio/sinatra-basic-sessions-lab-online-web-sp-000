@@ -4,7 +4,6 @@ class App < Sinatra::Base
 
   get '/hey' do
     @session = session
-    erb :index
   end
 
   post '/checkout' do
