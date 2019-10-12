@@ -5,7 +5,7 @@ class ShoppingCart
   @@all = []
 
   def initialize(params)
-    @item = item
+    @item = params[:item]
     @@all << self
   end
 
