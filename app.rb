@@ -9,11 +9,11 @@ class App < Sinatra::Base
 
   get '/' do
     erb :index
-  end 
+  end
 
   post '/checkout' do
     @item = params["item"]
-    erb :'view/show'
+    erb :'..views/show'
   end
 
 end
