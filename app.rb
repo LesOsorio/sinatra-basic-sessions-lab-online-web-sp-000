@@ -6,6 +6,10 @@ class App < Sinatra::Base
     @session = session
   end
 
+  get '/' do
+    erb :index
+  end 
+
   post '/checkout' do
     @item = params["item"]
     erb :'..views/show'
