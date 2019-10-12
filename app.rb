@@ -7,5 +7,9 @@ class App < Sinatra::Base
     erb :index
   end
 
+  post '/checkout' do 
+    @item = params["item"]
+    erb :'view/show'
+  end 
 
 end
